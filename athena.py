@@ -18,4 +18,4 @@ def athena_python(sql='', s3_staging_dir=''):
     return athena_df
  
  athena_df = athena_python('SELECT * FROM database.table limit 10;',\
-                         's3://{}/{}'.format(bucket, prefix)
+                         's3://{}/{}'.format(bucket, prefix))

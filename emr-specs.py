@@ -10,3 +10,8 @@ spark_yarn_executor_ram_overhead = math.ceil(total_executor_ram * 0.10)
 spark_driver_cores = spark_executor_cores
 spark_executor_instances = (num_executors_per_ec2 * ec2_instances) - 1
 spark_default_parallelism = (spark_executor_instances * spark_executor_cores) * 2
+
+print("spark.executor.memory: {}".format(spark_executor_ram))
+print("spark.yarn.executor.memoryOverhead: {}".format(spark_yarn_executor_ram_overhead))
+print("spark.executor.instances: {}".format(spark_executor_instances))
+print("spark.default.parallelism: {}".format(spark_default_parallelism))

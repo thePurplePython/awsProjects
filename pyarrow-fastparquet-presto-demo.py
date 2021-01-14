@@ -23,7 +23,7 @@ https://pandas.pydata.org/docs/
 ***
 1. Set Proxies & Bucket Access Keys
 2. List Partitions in S3 Buckets
-3. Read via Apache Arrow
+3. Read via Apache Arrow, FastParquet, and Presto
 ***
 '''
 
